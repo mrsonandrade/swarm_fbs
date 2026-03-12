@@ -2,6 +2,7 @@
 
 import pandas as pd
 import numpy as np
+import os
 import joblib
 import warnings
 warnings.filterwarnings("ignore")
@@ -125,8 +126,9 @@ def random_X():
 
     return data
 
-
-model = joblib.load('surrogate_fbs.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "surrogate_fbs.pkl")
+model = joblib.load(model_path)
 
 X_rand = random_X()
 X = normalize(X_rand)
