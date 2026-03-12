@@ -8,4 +8,4 @@ torch
 pandas
 joblib
 networkx
-sklearn
+scikit-learn
