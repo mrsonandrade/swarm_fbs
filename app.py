@@ -123,6 +123,7 @@ st.sidebar.markdown("---")  # optional separator
 st.sidebar.markdown(
 """
 **Notes:**
+- The application can be slow since it relies on free computational resources, so optimization may take a few minutes.
 - The wave direction controls the propagation angle.
 - The period affects the wavelength.
 - Changing these values resets the simulation.
